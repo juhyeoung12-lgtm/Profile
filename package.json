@@ -1,0 +1,21 @@
+{
+  "name": "juhyung-kim-profile",
+  "version": "1.0.0",
+  "description": "Personal academic profile website for Dr. Juhyung Kim",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": [
+    "profile",
+    "academic",
+    "mechanical-engineering",
+    "kaist"
+  ],
+  "author": "Juhyung Kim",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
