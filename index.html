@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juhyung Kim | Mechanical Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Juhyung Kim</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#research" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#publication" class="nav-link">Publication</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Juhyung Kim</h1>
+                    <h2 class="hero-subtitle">Mechanical Engineering, KAIST</h2>
+                    <p class="hero-description">
+                        Education
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#research" class="btn btn-primary">Research</a>
+                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                        <a href="./reference/CV_김주형. (3).pdf" download="CV_김주형.pdf" class="download-link">CV</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="./img/profile.jpg" alt="Dr. Kim Min-Su" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research</h2>
+                <p class="section-subtitle">현재 진행 중인 연구 프로젝트와 주요 연구 분야</p>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>유체역학 및 CFD</h3>
+                    <p>고성능 컴퓨팅을 활용한 복잡한 유동장 해석 및 최적화 기법 개발</p>
+                    <ul>
+                        <li>터보기계 내부 유동 해석</li>
+                        <li>다상유동 시뮬레이션</li>
+                        <li>전산유체역학 알고리즘 개발</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <h3>열전달 및 에너지 시스템</h3>
+                    <p>지속가능한 에너지 생산 및 효율적인 열관리 시스템 설계</p>
+                    <ul>
+                        <li>열교환기 최적화</li>
+                        <li>신재생 에너지 시스템</li>
+                        <li>열저장 기술</li>
+                    </ul>
+                </div>
+                <div class="research-card">
+                    <h3>기계시스템 설계</h3>
+                    <p>AI/ML 기법을 활용한 지능형 기계시스템 설계 및 제어</p>
+                    <ul>
+                        <li>디지털 트윈 기술</li>
+                        <li>예측 유지보수</li>
+                        <li>자율 제어 시스템</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Section -->
+    <section id="publication" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Publications</h2>
+                <p class="section-subtitle">주요 논문 및 학술 발표</p>
+            </div>
+            <div class="publication-tabs">
+                <button class="tab-btn active" data-tab="journal">Journal Papers</button>
+                <button class="tab-btn" data-tab="conference">Conference Papers</button>
+                <button class="tab-btn" data-tab="patents">Patents</button>
+            </div>
+            <div class="publication-content">
+                <div id="journal" class="tab-content active">
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <h4>CFD-based Optimization of Turbomachinery Blade Design</h4>
+                            <p class="publication-authors">Kim, M.S., Lee, J.H., Park, S.K.</p>
+                            <p class="publication-journal">International Journal of Mechanical Sciences, Vol. 145, pp. 123-135, 2024</p>
+                        </div>
+                        <div class="publication-item">
+                            <h4>Heat Transfer Enhancement in Compact Heat Exchangers</h4>
+                            <p class="publication-authors">Kim, M.S., Choi, Y.K.</p>
+                            <p class="publication-journal">Applied Thermal Engineering, Vol. 180, pp. 115-128, 2023</p>
+                        </div>
+                        <div class="publication-item">
+                            <h4>Multi-Phase Flow Simulation in Microchannels</h4>
+                            <p class="publication-authors">Kim, M.S., Jung, H.W., Kim, D.S.</p>
+                            <p class="publication-journal">International Journal of Heat and Mass Transfer, Vol. 156, pp. 119-132, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="conference" class="tab-content">
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <h4>AI-driven Predictive Maintenance for Industrial Machinery</h4>
+                            <p class="publication-authors">Kim, M.S., Lee, S.J.</p>
+                            <p class="publication-journal">Proceedings of ASME International Mechanical Engineering Congress, 2024</p>
+                        </div>
+                        <div class="publication-item">
+                            <h4>Digital Twin Implementation for Smart Manufacturing</h4>
+                            <p class="publication-authors">Kim, M.S., Park, M.K., Yoon, J.H.</p>
+                            <p class="publication-journal">International Conference on Manufacturing Engineering, 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="patents" class="tab-content">
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <h4>고효율 열교환기 설계 방법 및 장치</h4>
+                            <p class="publication-authors">김민수, 이정호</p>
+                            <p class="publication-journal">대한민국 특허 10-2024-0012345, 2024</p>
+                        </div>
+                        <div class="publication-item">
+                            <h4>터보기계 블레이드 최적화 시스템</h4>
+                            <p class="publication-authors">김민수, 박성규</p>
+                            <p class="publication-journal">대한민국 특허 10-2023-0123456, 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">연구 및 협업 문의는 언제든지 환영합니다</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Office</h4>
+                        <p>Daejeon Daejeon 유성구 대학로 291 한국과학기술원 기계공학동</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>pat5987@kaist.ac.kr</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Office Hours</h4>
+                        <p>월요일-금요일 09:00-16:00<br>예약 필수</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Juhyung Kim. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Google Scholar</a>
+                    <a href="#" class="social-link">ResearchGate</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
